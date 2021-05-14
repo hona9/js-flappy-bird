@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container{
+  height: 640px;
+  width: 500px;
+  position: absolute;
+}
+
+.background{
+  height: 550px;
+  width: 500px;
+  background: url('../img/main-background.png');
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.bird{
+  background: url('../img/flappy-bird.png') no-repeat;
+  height: 45px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pipe{
+  background: url('../img/pipe.png') no-repeat;
+  height: 300px;
+  width: 60px;
+  position: absolute;
+}
+
+.top-pipe{
+  background: url('../img/pipe.png') no-repeat;
+  transform: rotate(180deg);
+  height: 300px;
+  width: 60px;
+  position: absolute;
+}
+
+.ground{
+  width: 500px;
+  height: 100px;
+  background: url('../img/bottom-background.png');
+  position: absolute;
+  top: 548px;
+  z-index: 1;
+}
+
+.game-over{
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.score-count{
+  font-size: 50px;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.best-count{
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
