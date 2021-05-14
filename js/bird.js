@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         container.removeChild(topPipe);
       } 
       if(pipePosLeft>200 
-        && pipePosLeft<260 
+        && pipePosLeft<260
         && (birdPosBot < pipePosBot + 200|| birdPosBot >pipePosBot+gap-150)
           ||birdPosBot === -2){
         gameOver();
@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   function highScore(){
     if(scoreCount > highScoreCount){
       highScoreCount = scoreCount;
+      localStorage.setItem('highScoreCount', highScoreCount);
       highScoreDisplay.innerHTML = `Best: ${highScoreCount}`;
     }
   }
